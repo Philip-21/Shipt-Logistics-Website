@@ -91,11 +91,7 @@ input[type="checkbox"]{
     content: '' ;
     /* background-color: rgba(0, 0, 0, 0.8); */
     /* background: linear-gradient(to left, rgba(0, 0, 255, 0.8), rgba(255, 166, 0, 0.8)); */
-    /* background-color: rgba(0, 0, 0, 0.8); */
-    background: #108dc7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #ef8e38, #108dc7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #ef8d38d4, #108dc7d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 0;
     left: 0;
@@ -107,6 +103,7 @@ input[type="checkbox"]{
   top: 20%;
   margin-inline-start: 4%;
   overflow: hidden;
+  z-index: 7;
   /* z-index: ; */
 }
 .hero-text h1{
@@ -172,7 +169,7 @@ input[type="checkbox"]{
 } */
 .choose-us-options i{
   font-size: 3.5rem;
-  background: -webkit-linear-gradient( royalblue, orangered);
+  background: -webkit-linear-gradient( blue, orangered);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -197,7 +194,7 @@ input[type="checkbox"]{
   margin-top: 1%;
 }
 .why-choose{
-  padding: 60px 0 60px;
+  padding: 100px 0 60px;
   margin-top: 3%;
   padding-inline-end: 4%;
   padding-inline-start: 4%;
@@ -251,7 +248,7 @@ input[type="checkbox"]{
 }
 .why-choose-img i {
   font-size: 4rem;
-  background: -webkit-linear-gradient( royalblue, orangered);
+  background: -webkit-linear-gradient( blue, orangered);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -352,7 +349,7 @@ input[type="checkbox"]{
 }
 .service-container .service-img i{
   font-size: 3rem;
-  background: -webkit-linear-gradient( royalblue, orangered);
+  background: -webkit-linear-gradient( blue, orangered);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -455,15 +452,19 @@ input[type="checkbox"]{
   border: 5px solid blue;
   height: 200px;
 }
-.how-img1 img,.how-img2 img, .how-img3 img{
+.how-img1,.how-img2, .how-img3{
   background-color: white;
-  width: 250px;
+  width: 200px;
   border: 10px solid blue;
   border-radius: 20%;
   padding: 40px;
 }
+.how-img1 i,.how-img2 i, .how-img3 i{
+  font-size: 5rem;
+  color: orangered;
+}
 .how-it-works{
-  padding: 60px 0 200px ;
+  padding: 150px 0 200px ;
 }
 .how-text{
   background-color: white;
@@ -486,9 +487,13 @@ input[type="checkbox"]{
 
 /* pricing section starts */
 .pricing{
-  /* padding: 10px 0 60px; */
+  /* padding: 60px 0 60px; */
   margin-inline-end: 3%;
   margin-inline-start: 3%;
+  margin-block-start: -5%;
+}
+#price-container{
+  margin-block-start: 5%;
 }
 #price-card{
   border-radius: 10px;
@@ -525,7 +530,7 @@ input[type="checkbox"]{
   font-size: 1.3rem;
   margin: 0 auto;
   text-transform: capitalize;
-  text-decoration: line-through;
+  /* text-decoration: line-through; */
 }
 .price-body2 .address{
   font-family: 'Rubik',sans-serif;
@@ -624,6 +629,9 @@ input[type="checkbox"]{
   margin-block-start:5%;
   border: 1px solid gainsboro;
 }
+.location-img img{
+  width: 10%;
+}
 .location-imgs{
   margin-block-start:15%;
   border: 1px solid gainsboro;
@@ -665,6 +673,105 @@ input[type="checkbox"]{
 }
 /* location section end */
 
+/* contact section starts */
+.form-whole{
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  z-index: 1;
+}
+.contact{
+  font-family: 'Rubik',sans-serif;
+  /* text-align: left; */
+}
+.form-whole .heading{
+  text-align: left;
+}
+.form-whole .heading p{
+  width: 70%;
+  font-size: 1.1rem;
+}
+.form-whole .heading h1{
+  font-family: 'Rubik',sans-serif;
+  font-size: 2.5rem;
+}
+.form-whole h5{
+  font-family: 'Rubik',sans-serif;
+}
+.form-whole .type{
+  border: 1px solid gainsboro;
+  width: 520px;
+  padding: 10px 5px 5px 10px;
+  border-radius: 10px;
+}
+.form-whole .type2{
+  /* margin-inline-start: 20%; */
+  border-radius: 10px;
+  padding: 20px 100px 10px 100px;
+  cursor: pointer;
+  font-family: 'Rubik',sans-serif;
+}
+.form-whole .type1{
+  /* margin-inline-start: 20%; */
+  border-radius: 10px;
+  padding: 20px 70px 10px 70px;
+  cursor: pointer;
+  font-family: 'Rubik',sans-serif;
+}
+.form-whole .type1{
+  cursor: pointer;
+}
+.contact-form  #top{
+  /* top: 50%; */
+  display: none;
+}
+.contact-form .input-control{
+  padding: 20px;
+  width: 520px;
+  border-radius: 10px;
+  border: 1px gainsboro solid;
+}
+.contact-form select{
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px gainsboro solid;
+}
+.contact-form #number{
+  width: 420px;
+  margin-inline-start: -0.5%;
+}
+.contact-form .input-control::placeholder{
+  color: grey;
+  font-weight: 400;
+}
+.contact-form .input-control:focus{
+  outline: none;
+}
+.contact-form .input-bottom p{
+  padding-block-start: 1.5%;
+}
+.contact-form .buttons button{
+  background-color: blue;
+  padding: 15px 10px 5px 10px;
+  width: 520px;
+  margin-block-start: 3%;
+  margin-block-end: 3%;
+  border: none;
+  border-radius: 10px;
+}
+.contact-form .buttons button p{
+  font-family: 'Rubik',sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.type #click1:checked ~ .buzz{
+  display: flex;
+}
+/* contact section end */
+
+
 /* footer section starts */
 .footer{
   padding: 100px 0 60px;
@@ -699,7 +806,7 @@ input[type="checkbox"]{
   font-family: 'Rubik',sans-serif;
   line-height: 2;
 }
-.home h6,.links h6{
+.home h6 a,.links h6 a{
   font-family: 'Rubik',sans-serif;
   color: gray;
   font-weight: 300;
@@ -714,7 +821,16 @@ input[type="checkbox"]{
   font-family: 'Rubik',sans-serif;
 }
 .home,.links,.reach{
-  margin-block-start: 20%;
+  /* margin-block-start: 20%;
+   */
+}
+.copyright{
+  padding-inline-start: 5%;
+}
+.copyright p{
+  font-family: 'Rubik',sans-serif;
+  text-transform: capitalize;
+  font-size: 1.1rem;
 }
 /* footer section end */
 
@@ -886,3 +1002,21 @@ input[type="checkbox"]{
     width: 100%;
   }
 }
+
+/* .preloader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .4s ease;
+}
+
+.fade-out-animation {
+  opacity: 0;
+  visibility: hidden;
+} */

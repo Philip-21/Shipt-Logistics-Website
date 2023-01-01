@@ -8323,7 +8323,7 @@ tbody td:hover, .selected {
   color: #fff;
   border: none; }
   tbody td:hover:after, .selected:after {
-    background: #2a3246; }
+    background: royalblue; }
 
 tbody td:active {
   -webkit-transform: scale(0.7);
@@ -8333,7 +8333,7 @@ tbody td:active {
 #today {
   color: #fff; }
   #today:after {
-    background: #e13a9d; }
+    background: royalblue; }
 
 #disabled {
   cursor: default;
