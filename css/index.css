@@ -31,6 +31,7 @@ font-family: 'Rubik';
   top: 0;
   z-index: 99;
   background-color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important
 }
 .logos img{
   width: 150px;
@@ -100,7 +101,7 @@ input[type="checkbox"]{
 }
 .hero-text{
   position: absolute;
-  top: 20%;
+  top: 10%;
   margin-inline-start: 4%;
   overflow: hidden;
   z-index: 7;
@@ -675,9 +676,9 @@ input[type="checkbox"]{
 
 /* contact section starts */
 .form-whole{
-  position: absolute;
-  top: 20%;
-  left: 30%;
+  padding-top: 10%;
+  margin: 0 auto;
+  width: 50%;
   z-index: 1;
 }
 .contact{
@@ -688,7 +689,7 @@ input[type="checkbox"]{
   text-align: left;
 }
 .form-whole .heading p{
-  width: 70%;
+  width: 100%;
   font-size: 1.1rem;
 }
 .form-whole .heading h1{
@@ -727,7 +728,7 @@ input[type="checkbox"]{
 }
 .contact-form .input-control{
   padding: 20px;
-  width: 520px;
+  width: 100%;
   border-radius: 10px;
   border: 1px gainsboro solid;
 }
@@ -737,7 +738,7 @@ input[type="checkbox"]{
   border: 1px gainsboro solid;
 }
 .contact-form #number{
-  width: 420px;
+  width: 100%;
   margin-inline-start: -0.5%;
 }
 .contact-form .input-control::placeholder{
@@ -753,7 +754,7 @@ input[type="checkbox"]{
 .contact-form .buttons button{
   background-color: blue;
   padding: 15px 10px 5px 10px;
-  width: 520px;
+  width: 100%;
   margin-block-start: 3%;
   margin-block-end: 3%;
   border: none;
@@ -836,7 +837,7 @@ input[type="checkbox"]{
 
 @media only screen and (max-width:1100px){
   .header .containers{
-     box-shadow: 5px 5px 5px rgb(228, 224, 224);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   background-color: #fff;
   }
   #hide{
@@ -859,7 +860,7 @@ input[type="checkbox"]{
     background-color: white;
     height: 100%;
     width: 100%;
-    top:  65px;
+    top:  95px;
     left: -100%;
     margin-left: 0;
     overflow-y: auto;
@@ -880,6 +881,13 @@ input[type="checkbox"]{
   ul li a{
     font-weight: bold;
     font-size: 1.3rem;
+  }
+  .hero-text h1{
+    font-size: 3.5rem;
+  }
+  .hero-text{
+    position: absolute;
+    top: 5%;
   }
 }
 @media only screen and (max-width:991px){
@@ -903,9 +911,26 @@ input[type="checkbox"]{
     /* background-color: red; */
     margin-left: 8.333333%;
   }
-}
-@media only screen and (max-width:540px){
-
+  .hero-text h1{
+    font-size: 3rem;
+  }
+  .hero-text p{
+    width: 60%;
+    font-size: 1rem;
+  }
+  .logos img{
+    width: 100px;
+  }
+  .hero{
+    padding: 70px 0 0;
+  }
+  .cons button{
+    padding: 15px;
+  }
+  .containers nav ul{
+    position:fixed;
+    top: 65px;
+  }
 }
 @media only screen and (max-width:820px){
   .choose-us-img img{
@@ -916,9 +941,6 @@ input[type="checkbox"]{
   }
 }
 @media only screen and (max-width:786px){
-.header .containers{
-  background-color: red;
-}
 .about-text{
   border-left: none;
   border-bottom: 3px solid silver;
@@ -933,6 +955,75 @@ input[type="checkbox"]{
   top: 8px;
   transform: rotate(360deg);
 }
+.hero-text h1{
+  font-size: 2.5rem;
+}
+.cons button{
+  padding: 10px;
+}
+.cons button a{
+  font-size: 1rem;
+}
+.carousel-item{
+  padding: 0 0 30px;
+}
+.form-whole{
+  padding-top: 20%;
+}
+.contact-form .buttons button{
+  background-color: blue;
+  padding: 15px 10px 5px 10px;
+}
+.contact-form .buttons button p{
+  font-size: 1rem;
+}
+}
+@media only screen and (max-width:630px){
+  .hero-text p{
+    width: 70%;
+  }
+  .cons button{
+    padding: 7px;
+  }
+  .cons button a{
+    font-size: 0.6975rem;
+  }
+  .hero-text p{
+    font-size: 0.8975rem;
+  }
+  .hero-text{
+    position: absolute;
+    top:0%;
+  }
+}
+@media only screen and (max-width:540px){
+  .hero-text h1{
+    font-size: 2rem;
+  }
+  .hero-text p{
+    font-size: 0.8975rem;
+    width: 70%;
+  }
+  .logos img{
+    width: 80px;
+  }
+  .hero{
+    padding: 50px 0 0;
+  }
+  .cons button{
+    padding: 5px;
+  }
+  .cons button a{
+    font-size: 0.6975rem;
+  }
+  .hero-text{
+    position: absolute;
+    top:1%;
+  }
+  .containers nav ul{
+    position:fixed;
+    top: 56px;
+  }
 }
 @media only screen and (max-width:414px){
   .containers nav ul{
